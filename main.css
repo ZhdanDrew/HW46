@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Шрифт для всего документа */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#graph-wrapper {
+    display: flex;
+    flex-direction: row-reverse; /* Размещаем содержимое в строку в обратном порядке */
+    justify-content: space-around; /* Выравниваем элементы по горизонтали с равными промежутками между ними */
+    margin-bottom: 20px; /* Добавляем нижний отступ */
+}
+
+#graph-wrapper form {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+#graph-wrapper input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px; /* Отступ справа для разделения элементов */
+    border: 1px solid #ccc; /* Граница для визуального разделения */
+    border-radius: 5px; /* Скругление углов */
+}
+
+#create-graph-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Промежуток между элементами */
+    width: 300px;
+    position: absolute;
+    right: 20%; /* Положение справа */
+    top: 15%; /* Положение сверху */
+}
+
+#create-graph-data input[type="text"],
+#create-graph-data button {
+    padding: 8px; /* Поля вокруг текста */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#create-graph-data button {
+    cursor: pointer; /* Изменение курсора при наведении */
+    background-color: #4caf50; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+}
+
+#create-graph-data button:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .form-wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+
+        #graph-wrapper {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        #form {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #create-graph-data {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #create-graph-data input[type="text"] {
+            width: calc(100% - 120px);
+        }
+
+        #create-graph-data button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #create-graph-data button:hover {
+            background-color: #0056b3;
+        }
+
+        #create-graph-data {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; 
+            width: 300px;
+            position: absolute;
+            right: 20%; 
+            top: 15%; 
+        }
+
+        #create-graph-data input[type="text"],
+        #create-graph-data button {
+            padding: 8px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #create-graph-data button {
+            cursor: pointer; 
+            background-color: #4caf50; 
+            color: white; 
+            border: none; 
+        }
+
+        #create-graph-data button:hover {
+            background-color: #45a049; 
+        }
+    </style>
+</head>
+<body>
+    <div id="graph-wrapper">
+        <form id="form">
+            <div class="form-wrapper">
+                <input type="number" id="width-input" placeholder="width" />
+                <input type="number" id="height-input" placeholder="height" />
+            </div>
+
+            <!-- <button id="apply-changes-button">Apply changes</button> -->
+        </form>
+    </div>
+    <div id="create-graph-data">
+        <input type="text" id="title-input" placeholder="title">
+        <input type="text" id="value-input" placeholder="value">
+        <input type="text" id="x-input" placeholder="x">
+        <input type="text" id="y-input" placeholder="y">
+        <button id="create-graph-data-button">Create new data</button>
+    </div>
+
+    <script src="./graph.js"></script>
+</body>
+</html>
